@@ -87,3 +87,13 @@ Atributs:
 -id_fauler: int
 -client_name: text
 ```
+
+## Tools
+
+```
+https://teams.microsoft.com/l/message/19:meeting_NzA1ZjU2MzctN2FmNy00MWM1LWFkNDktZDA2Nzg5NmQzZTM5@thread.v2/1707402613326?context=%7B%22contextType%22%3A%22chat%22%7D
+
+https://desktop.github.com/
+
+https://www.skinatech.com/inicio/comentarios-en-el-codigo-fuente/
+```
