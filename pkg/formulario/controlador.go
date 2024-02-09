@@ -8,11 +8,11 @@ import (
 	"github.com/test/pkg/res"
 )
 
+// commit 1
 func postFormulario(w http.ResponseWriter, r *http.Request) {
 	body, _ := res.GetBody(r)
 	name := body["name"].(string)
 	descripcion := body["descripcion"].(string)
-	
 
 	err := InsertFormulario(name, descripcion)
 	if err != nil {
@@ -44,7 +44,6 @@ func putFormulario(w http.ResponseWriter, r *http.Request) {
 	body, _ := res.GetBody(r)
 	name := body["name"].(string)
 	descripcion := body["descripcion"].(string)
-	
 
 	err = Updateformulario(id, name, descripcion)
 	if err != nil {
