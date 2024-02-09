@@ -7,6 +7,7 @@ import (
 	"github.com/test/pkg/res"
 )
 
+// commit 1
 func CreateTable() error {
 	sql := `
 		CREATE TABLE IF NOT EXISTS formulario (
@@ -55,7 +56,6 @@ func SelectAllFormularios() (res.Json, error) {
 		var id int
 		var name string
 		var description string
-		
 
 		err = rows.Scan(&id, &name, &description)
 		if err != nil {
@@ -63,10 +63,9 @@ func SelectAllFormularios() (res.Json, error) {
 		}
 
 		formulario = append(formulario, res.Json{
-			"id":       id,
-			"name":     name,
-			"description":    description,
-			
+			"id":          id,
+			"name":        name,
+			"description": description,
 		})
 	}
 
