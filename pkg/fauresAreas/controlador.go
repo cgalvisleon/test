@@ -8,7 +8,11 @@ import (
 	"github.com/test/pkg/res"
 )
 
+<<<<<<< HEAD:pkg/fauresAreas/controlador.go
 func postFaure(w http.ResponseWriter, r *http.Request) {
+=======
+func postFormulario(w http.ResponseWriter, r *http.Request) {
+>>>>>>> develop:pkg/formulario/controlador.go
 	body, _ := res.GetBody(r)
 	idFauler := body["idFauler"].(string)
 	nameArea := body["nameArea"].(string)
