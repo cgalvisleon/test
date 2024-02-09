@@ -8,7 +8,6 @@ import (
 	"github.com/test/pkg/res"
 )
 
-// commit 1
 func postFormulario(w http.ResponseWriter, r *http.Request) {
 	body, _ := res.GetBody(r)
 	name := body["name"].(string)
@@ -23,6 +22,7 @@ func postFormulario(w http.ResponseWriter, r *http.Request) {
 	res.JSON(w, r, http.StatusOK, res.Json{"message": "User created"})
 }
 
+// commit 1
 func getAllFormulario(w http.ResponseWriter, r *http.Request) {
 	users, err := SelectAllFormularios()
 	if err != nil {
