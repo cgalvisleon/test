@@ -7,7 +7,6 @@ import (
 	"github.com/test/pkg/res"
 )
 
-// commit 1
 func CreateTable() error {
 	sql := `
 		CREATE TABLE IF NOT EXISTS formulario (
@@ -26,6 +25,7 @@ func CreateTable() error {
 	return nil
 }
 
+// commit 2
 func InsertFormulario(name, descripcion string) error {
 	sql := `
 		INSERT INTO formulario (name, description)
